@@ -1,1 +1,128 @@
 
+body {
+    font-family: "Arial";
+    background: #d8d8d8;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #4a90e2;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #6e6e6e;
+}
+
+main {
+    width: 60%;
+    margin: 40px auto;
+    padding: 0 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+main h2 {
+    margin-bottom: 15px;
+    color: #4a90e2;
+}
+
+main p {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+img {
+    display: block;
+    max-width: 25%;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size:1.25rem;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #4a90e2;
+    color: white;
+    font-size:1.5rem;
+}
+
+#rec_button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#rec_button:hover {
+    background: #357abd;
+}
+
+#rec_div {
+    margin-top: 30px;
+}
+
+#rec_div img {
+    margin: 15px 0;
+    max-width: 200px;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: disc;
+    font-size:1.25rem;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 15px 0;
+    background: #333;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+}

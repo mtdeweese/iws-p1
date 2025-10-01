@@ -1,57 +1,37 @@
-<html>
-
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+    <meta charset="UTF-8">
+    <LINK rel="stylesheet" href="style.css">
     <title>iws-p1</title>
-    <h1>Books!</h1>
-</header>
-<nav>
-    <div>
-        <a href="index.html">Home</a>
-    </div>
-    <div>
-        <a href="current.html">Current Book</a>
-    </div>
-    <div>
-        <a href="reccomendation.html">Book Recommendation</a>
-    </div>
-</nav>
+</HEAD>
+
 <body>
-    <h2>Book Reccomendation</h2>
-    <table>
-        <tr>
-            <th>Title:</th>
-            <td>The Blade Itself</td>
-        </tr>
-        <tr>
-            <th>Author:</th>
-            <td>Joe Abercrombie</td>
-        </tr>
-        <tr>
-            <th>Series:</th>
-            <td>First Law</td>
-        </tr>
-        <tr>
-            <th>Genre:</th>
-            <td>Fantasy</td>
-        </tr>
-    </table>
-    <p>
-    I would reccomend the "First Law" series by Joe Abercrombie...
-    </p>
-    <img src="firstlaw.jpg" alt="Picture of The Book">
-    <table>
-        <tr>
-            <th>Pros</th>
-            <th>Cons</th>
-        </tr>
-        <tr>
-            <td>Good world building</td>
-            <td>Some cliches</td>
-        </tr>
-    </table>
-    <h2>Rating</h2>
-    <p>I would give this series a 5 out of 5 stars</p>
-    <button>New Recommendation</button>
+    <header>
+        <h1>Books!</h1>
+        <nav>
+            <div>
+                <a href="index.html">Home</a>
+            </div>
+            <div>
+                <a href="current.html">Current Book</a>
+            </div>
+            <div>
+                <a href="recommendation.html">Book Recommendation</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Book Recommendation</h2>
+        <p id="rec_text">Click the button to get a book recommendation!</p>
+        <button id="rec_button">New Recommendation</button>
+        <div id="rec_div"></div>
+    </main>
+    <script src="recommendation.js"></script>
+
+    <footer>
+    <p>Matthew's Book Site</p>
+    </footer>
 </body>
 
 
