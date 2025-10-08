@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background: #4a90e2;
+    background: #0e427c;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -31,7 +31,7 @@ nav {
 
 nav a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: bold;
     font-size: 2rem;
     transition: color 0.3s;
@@ -52,7 +52,7 @@ main {
 
 main h2 {
     margin-bottom: 15px;
-    color: #4a90e2;
+    color: #0e427c;
 }
 
 main p {
@@ -89,7 +89,7 @@ th {
 }
 
 #rec_button {
-    background: #4a90e2;
+    background: #0e427c;
     color: white;
     border: none;
     padding: 12px 20px;

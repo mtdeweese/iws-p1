@@ -19,15 +19,52 @@ const recommendations = [
     cover: "images/firstlaw.jpg",
     pros: ["Grimdark", "World-building", "Political"],
     cons: ["Some Cliches", "Some characters are unlikeable"],
+    },
+    {
+    title: "Mistborn",
+    series: "First Law",
+    author: "Joe Abercrombie",
+    genre: "Fantasy",
+    rating: 4.5,
+    cover: "images/firstlaw.jpg",
+    pros: ["Grimdark", "World-building", "Political"],
+    cons: ["Some Cliches", "Some characters are unlikeable"],
+    },
+    {
+    title: "The Stormlight Archive",
+    series: "First Law",
+    author: "Joe Abercrombie",
+    genre: "Fantasy",
+    rating: 4.5,
+    cover: "images/firstlaw.jpg",
+    pros: ["Grimdark", "World-building", "Political"],
+    cons: ["Some Cliches", "Some characters are unlikeable"],
+    },
+    {
+    title: "Red Rising",
+    series: "First Law",
+    author: "Joe Abercrombie",
+    genre: "Fantasy",
+    rating: 4.5,
+    cover: "images/firstlaw.jpg",
+    pros: ["Grimdark", "World-building", "Political"],
+    cons: ["Some Cliches", "Some characters are unlikeable"],
     }
 ]
 
+var current = -1;
 const rec_div = document.getElementById("rec_div");
 const rec_button = document.getElementById("rec_button");
 
 function randRecommendation() {
     const random = Math.floor(Math.random() * recommendations.length);
-    return recommendations[random];
+    if (random != current) {
+        current = random;
+        return recommendations[random];
+    
+    } else {
+        return randRecommendation();
+    }
 }
 
 function displayRecommendation(recommendation){
